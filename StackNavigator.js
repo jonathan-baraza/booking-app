@@ -6,6 +6,15 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 const StackNavigator = () => {
+
+    function BottoTabs(){
+        return(
+            <Tab.Navigator>
+                <Tab.Screen name="Home" />
+            </Tab.Navigator>
+        )
+    }
+
   return (
     <View>
       <Text>StackNavigator</Text>
